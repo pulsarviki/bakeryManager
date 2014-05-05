@@ -1,0 +1,198 @@
+
+
+<html>
+  <head>
+    <title>aboutus-page</title>
+
+    <style>
+        .design1{
+            font-family: cursive;
+            font-style: italic;
+            color: purple;
+            font-weight: bolder;
+        }
+
+
+
+       .glossybutton1
+            {
+                background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.6)), color-stop(0.49, rgba(255, 255, 255, 0.3)), color-stop(0.51, rgba(255, 255, 255, 0.0)), to(rgba(255, 255, 255, 0.2)));
+                background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+
+                 -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+
+                -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+                -moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 0.30);
+                box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.30);
+
+
+                -webkit-transition: background-color 0.3s ease;
+                -moz-transition: background-color 0.3s ease;
+                -o-transition: background-color 0.3s ease;
+                -ms-transition: background-color 0.3s ease;
+                transition: background-color 0.3s ease;
+            }
+    </style>
+    <script language="JavaScript1.1">
+<!--
+var image1=new Image()
+image1.src="20.jpg"
+var image2=new Image()
+image2.src="112.jpg"
+var image3=new Image()
+image3.src="23.jpg"
+var image4=new Image()
+image4.src="11.jpg"
+var image5=new Image()
+image5.src="12.jpg"
+var image6=new Image()
+image6.src="13.jpg"
+var image7=new Image()
+image7.src="111.jpg"
+var image8=new Image()
+image8.src="15.jpg"
+var image9=new Image()
+image9.src="18.jpg"
+
+//-->
+</script>
+   <script type="text/javascript" language="JavaScript" src="http://j.maxmind.com/app/geoip.js">
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+  </head>
+
+  <body background="img6.jpg">
+       
+        <img src="100.png" align="left">
+      <h1 align="center">WELCOME TO L.J IYENGAR BAKERY</h1>
+
+      <table align="right" >
+           <td rowspan="10">
+       <img src="22.jpg" name="slide" width=450 height=450  >
+           </td>
+       </table>
+
+
+    <br><br><br><br><br><br><br><br><br>
+   <table  align="left">
+  <tr>
+              <td>
+                  <img src="aboutusimg.jpg" width="40%">
+              </td>
+          </tr>
+          <tr>
+              <td >
+                     <font color="black">
+            <h2 align="left">L.J.Iyengar Bakery</h2><pre>
+<font size="3" color="black" align="left" face="arial, vardana, sana-serif">
+      In 1982, L.J. IYENGAR'S Bakery(LJIB) opened its first small showroom
+   in the city HUBLI opposite to convent high school. From its inception,LJIB has
+   been cherished for its classic baked goods, vintage decor and warm,
+   inviting atmosphere.
+      Few years later, LJIB original, the owner has thoughtfully expanded the bakery from its
+   first small shop to its current five branches all over the city. Starting
+   with  the firewood then the baakery slowly  started to develop by using more advanced
+   machinery like electric oven and later diesel oven and other advanced machineries;
+   Now you can see LJIB in many parts of the city like keshwapur,madhura colony,vidyanagar, and in other
+   parts.Specialized in bakery and bakery products
+   THANK YOU FOR VISITING OUR SITE.
+
+
+</font></pre>
+
+              </td>
+          </tr>
+          <tr>
+              <td>
+                    <input type="submit" value="BACK" name="BACK" align="left" onclick=window.location.replace("background_1.html");
+style="height: 3em; width: 15em; background-color: transparent; font-style: italic; font-size: 100%;">
+              </td>
+          </tr>
+
+      </table>
+ 
+
+     <script>
+<!--
+
+var step=1
+function slideit(){
+
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<9)
+step++
+else
+step=1
+
+setTimeout("slideit()",1500)
+}
+slideit()
+//-->
+</script>
+
+
+    <script type="text/javascript">
+            var map;
+            function initialize() {
+                var options =
+    {
+        zoom: 2,
+        center: new google.maps.LatLng(geoip_latitude(), geoip_longitude()),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: true,
+        mapTypeControlOptions:
+        {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            poistion: google.maps.ControlPosition.TOP_RIGHT,
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP,
+              google.maps.MapTypeId.TERRAIN,
+              google.maps.MapTypeId.HYBRID,
+              google.maps.MapTypeId.SATELLITE]
+        },
+        navigationControl: true,
+        navigationControlOptions:
+        {
+            style: google.maps.NavigationControlStyle.ZOOM_PAN
+        },
+        scaleControl: true,
+        disableDoubleClickZoom: true,
+        draggable: false,
+        streetViewControl: true,
+        draggableCursor: 'move'
+    };
+                map = new google.maps.Map(document.getElementById("map"), options);
+                // Add Marker and Listener
+                var latlng = new google.maps.LatLng(geoip_latitude(), geoip_longitude());
+                var marker = new google.maps.Marker
+    (
+        {
+            position: latlng,
+            map: map,
+            title: 'Click me'
+        }
+    );
+        var infowindow = new google.maps.InfoWindow({
+                    content: 'You Are Here'
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    // Calling the open method of the infoWindow
+                    infowindow.open(map, marker);
+                });
+            }
+            window.onload = initialize;
+    </script>
+    <div id="map" style="height: 600px; width: 800px" />
+
+
+
+  </body>
+</html>

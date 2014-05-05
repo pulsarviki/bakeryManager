@@ -1,0 +1,214 @@
+/* 
+    Document   : style01
+    Created on : Apr 23, 2013, 7:27:34 PM
+    Author     : sagar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+	.bb1
+	{
+            
+            font-size: xx-large;
+		text-align: center;
+                font-family: cursive;
+                position: relative;
+                padding: 5px;
+	}
+        .bb2
+        {
+            font-size: larger;
+		text-align: center;
+                font-family: cursive;
+                position: relative;
+              
+        }
+        
+        .h2
+        {
+            color: white;
+            text-transform: uppercasel;
+        }
+        
+        
+form label {
+	display: block;
+	text-transform: uppercase;
+	color: black;
+	margin: 0 0 0.3125em 0;
+}
+
+
+
+form input[type="text"], input[type="password"]{
+	
+                            width: 100%;
+                            padding: 7px 4px 8px 10px;
+                            margin-bottom: 15px;
+                            
+                            
+                       
+                             border: 1px solid #4e3043; 
+                             border: 1px solid rgba(78,48,67, 0.8);
+                             background: rgba(0,0,0,0.15);
+                             border-radius: 2px;
+                             box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+                             transition: all 0.3s ease-out;
+
+                           
+                             color: #fff;
+                             font-size: 12px;
+}
+
+
+form textarea{
+	
+                            width: 100%;
+                            padding: 7px 4px 8px 10px;
+                            margin-bottom: 15px;
+                            
+                            
+                              float: center;
+                             border: 1px solid #4e3043; 
+                             border: 1px solid rgba(78,48,67, 0.8);
+                             background: rgba(0,0,0,0.15);
+                             border-radius: 2px;
+                             box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+                             transition: all 0.3s ease-out;
+
+                           
+                             color: #fff;
+                             font-size: 12px;
+                            
+         position: relative;
+}
+
+form textarea 
+{
+	width: 70%;
+                            padding: 5px 0px;
+                            
+                            color: black;
+                            text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+                            font-size: 16px;
+                            font-weight: bold;
+                            font-family: cursive;
+                            
+                            background: yellow;
+                            background: linear-gradient(rgba(2,2,6,0.0), rgba(2,1,1,0.0));                                border-radius: 5px;
+                            border: 1px solid #4e3043;
+                            box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+                            cursor: pointer;
+                           
+        position: relative;
+}
+
+
+
+
+
+	form input[type="text"]:hover, input[type="password"]:hover, 
+	form input[type="text"]:focus, input[type="password"]:focus 
+        {
+		border: 1px solid #bbbdbe;
+	}
+	
+
+
+form input[type="submit"],input[type="button"] 
+{
+	width: 70%;
+                            padding: 5px 0px;
+                            
+                            color: white;
+                            text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: cursive;
+                            
+                            background:orange;
+                            background: linear-gradient(rgba(41,20,46,1), rgba(66,49,35,0.7));
+                            border-radius: 5px;
+                            border: 1px solid #4e3043;
+                            box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 2px 1px rgba(0,0,0,0.1);
+                            cursor: pointer;
+}
+
+
+
+
+
+
+
+form#login-form {
+	width: 18.75em;
+	margin: 0 auto;
+}
+		
+.ba1
+{
+      text-align: center;
+      font-family: cursive;
+}
+            
+.ba2{
+   text-align: center;
+   font-family: cursive;
+                
+}
+.ba3
+{
+    text-align: center;
+      font-family: cursive;
+}
+
+.ba4
+{
+ 
+      font-family: cursive;
+}
+            
+a
+{
+    align : center;
+    vertical-align: middle;
+    
+}
+
+.middletext {
+  vertical-align: middle;
+}
+#id {
+  vertical-align: middle;
+}
+
+
+
+.background
+{
+    width: 100%;
+    background: url(images/51.jpg) center top no-repeat;
+    background-attachment:fixed;
+
+}

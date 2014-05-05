@@ -1,0 +1,177 @@
+
+
+<html>
+  <head>
+    <title>aboutus-page</title>
+
+    <style>
+        .design1{
+            font-family: cursive;
+            font-style: italic;
+            color: purple;
+            font-weight: bolder;
+        }
+        
+
+
+       .glossybutton1
+            {
+                background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.6)), color-stop(0.49, rgba(255, 255, 255, 0.3)), color-stop(0.51, rgba(255, 255, 255, 0.0)), to(rgba(255, 255, 255, 0.2)));
+                background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+                background-image: linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+
+                 -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+
+                -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+                -moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 0.30);
+                box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.30);
+
+
+                -webkit-transition: background-color 0.3s ease;
+                -moz-transition: background-color 0.3s ease;
+                -o-transition: background-color 0.3s ease;
+                -ms-transition: background-color 0.3s ease;
+                transition: background-color 0.3s ease;
+            }
+    </style>
+    <script language="JavaScript1.1">
+<!--
+var image1=new Image()
+image1.src="biscimg1.jpg"
+var image2=new Image()
+image2.src="cakeimg1.jpg"
+
+
+//-->
+</script>
+   <script type="text/javascript" language="JavaScript" src="http://j.maxmind.com/app/geoip.js">
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+  </head>
+  <body background="img6.jpg">
+        <img src="logoimg.jpg" align="left">
+      <h1 align="center">WELCOME TO L.J IYENGAR BAKERY</h1>
+
+      <table align="right" >
+           <td rowspan="10">
+       <img src="biscimg1.jpg" name="slide" width=450 height=450  >
+           </td>
+       </table>
+    
+
+    <br><br><br><br><br><br><br><br><br>
+   <table  align="left">
+  <tr>
+              <td>
+                  <img src="aboutusimg.jpg" width="40%">
+              </td>
+          </tr>
+          <tr>
+              <td >
+                     <font color="black">
+            <h2 align="left">L.J.Iyengar Bakery</h2><pre>
+<font size="3" color="black" align="left" face="arial, vardana, sana-serif">
+      In 1996, Magnolia Bakery opened its first location on a quiet street corner
+   in the heart of New York’s West Village. From its inception,Magnolia has
+   been cherished for its classic American baked goods, vintage decor and warm,
+   inviting atmosphere.
+      In 2007, Magnolia’s original owner passed her oven mitts to Steve and Tyra
+   Abrams. Together, the Abrams’ have thoughtfully expanded the bakery from its
+   first West Village shop to its current eight locations worldwide. Today,
+   Magnolia can be found on Columbus Avenue, in Rockefeller Center, Bloomingdale’s
+   flagship and Grand Central Station in New York; West ThirdStreet in Los Angeles;
+   Block 37 in Chicago; in The Dubai Mall in the United Arab Emirates; Dar Al
+   Salem Mall in Doha, Qatar; in the Al Hamra Tower in Kuwait City, Kuwait;
+   and in ABC Dbayeh Mall in Beirut, Lebanon.
+ 
+
+</font></pre>
+
+              </td>
+          </tr>
+
+      </table>
+
+     <script>
+<!--
+
+var step=1
+function slideit(){
+
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<2)
+step++
+else
+step=1
+
+setTimeout("slideit()",1500)
+}
+slideit()
+//-->
+</script>
+
+
+    <script type="text/javascript">
+            var map;
+            function initialize() {
+                var options =
+    {
+        zoom: 2,
+        center: new google.maps.LatLng(geoip_latitude(), geoip_longitude()),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: true,
+        mapTypeControlOptions:
+        {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            poistion: google.maps.ControlPosition.TOP_RIGHT,
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP,
+              google.maps.MapTypeId.TERRAIN,
+              google.maps.MapTypeId.HYBRID,
+              google.maps.MapTypeId.SATELLITE]
+        },
+        navigationControl: true,
+        navigationControlOptions:
+        {
+            style: google.maps.NavigationControlStyle.ZOOM_PAN
+        },
+        scaleControl: true,
+        disableDoubleClickZoom: true,
+        draggable: false,
+        streetViewControl: true,
+        draggableCursor: 'move'
+    };
+                map = new google.maps.Map(document.getElementById("map"), options);
+                // Add Marker and Listener
+                var latlng = new google.maps.LatLng(geoip_latitude(), geoip_longitude());
+                var marker = new google.maps.Marker
+    (
+        {
+            position: latlng,
+            map: map,
+            title: 'Click me'
+        }
+    );
+        var infowindow = new google.maps.InfoWindow({
+                    content: 'You Are Here'
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    // Calling the open method of the infoWindow
+                    infowindow.open(map, marker);
+                });
+            }
+            window.onload = initialize;
+    </script>
+    <div id="map" style="height: 600px; width: 800px" />
+      
+      
+   
+  </body>
+</html>
